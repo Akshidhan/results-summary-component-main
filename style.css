@@ -1,0 +1,319 @@
+@font-face{
+  font-family: "HankenGrotesk";
+  src: url("assets/fonts/HankenGrotesk-VariableFont_wght.woff") format("woff");
+} 
+
+p{
+  margin: 0px;
+  font-size: 1.125rem;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+
+/* For Bigger screens*/
+@media (min-width: 368px){
+  .cl-bg-2{
+    width: 50%;
+    float: left;
+  }
+
+  #score{
+    border-radius: 50px;
+    padding: 10%;
+  }
+
+  main{
+    box-shadow: 20px 20px 100px -30px black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+
+  h1{
+    margin-bottom: 15%;
+  }
+
+  .score{
+    width: 70%;
+    margin-bottom: 10%;
+  }
+}
+
+
+/*For mobile screens*/
+@media (max-width: 367px){
+  .cl-sm-1{
+    width: 100%;
+    float: left;
+    margin: 0px;
+  }
+  body{
+    margin: 0px;
+  }
+
+  #score{
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 10%;
+  }
+
+  footer{
+    opacity: 0;
+  }
+
+  div{
+    padding: 1%;
+    height: 50%;
+  }
+
+  .score{
+    width: 50%;
+    margin-bottom: 5%;
+  }
+  main{
+    box-shadow: 20px 20px 100px -30px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 100%;
+  }
+
+  h1{
+    margin-bottom: 10%;
+  }
+  #score{
+    padding: 5%;
+  }
+}
+
+/*Body part*/
+body{
+  font-family: "HankenGrotesk";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+main{
+  background: hsl(0, 0%, 100%);
+}
+
+#score{
+  background: linear-gradient(135deg, hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+  color: hsl(0, 0%, 100%);
+}
+
+
+#analysis{
+  padding: 5%;
+  height: 100%;
+}
+
+.score{
+  background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  aspect-ratio: 1/1;
+  padding: 5%;
+  border-radius: 50%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.marks{
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.of10{
+  color: hsl(241, 100%, 79%);
+  font-weight: 700;
+}
+
+.result{
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.desc{
+  color: hsl(241, 100%, 89%);
+}
+
+.column{
+  float: left;
+}
+
+footer{
+  display: flex;
+  flex: bottom;
+}
+
+h1{
+  color: hsl(241, 100%, 89%);
+  font-size: 2rem;
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.scorecard{
+  border-radius: 20px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 4%;
+  min-width: 175px;
+}
+
+.summary{
+  text-align: left;
+  color: hsl(224, 30%, 27%);
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 7%;
+  width: 100%;
+}
+
+#title{
+
+}
+
+#points{
+  position: absolute;
+  right: 0px;
+  margin-right: 4%;
+}
+
+#reaction{
+  color: hsl(0, 100%, 67%);
+  background: #fff6f5;
+}
+
+#memory{
+  color: hsl(39, 100%, 56%);
+  background: #fffbf2;
+}
+
+#verbal{
+  color: hsl(166, 100%, 37%);
+  background: #f2fafa;
+}
+
+#visual{
+  color: hsl(234, 85%, 45%);
+  background: #f3f3fa;
+}
+
+button{
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  background: hsl(224, 30%, 27%);
+  padding: 3%;
+  border: 0px;
+  border-radius: 20px;
+  margin-top: 10%;
+  transition-timing-function: ease-in-out;
+}
+button:hover{
+  background: linear-gradient(90deg, hsl(252, 100%, 67%) , hsl(241, 81%, 54%));
+}
+
+img{
+  margin-right: 2%;
+}
+
+/*for the footer*/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
