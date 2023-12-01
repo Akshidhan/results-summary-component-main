@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (https://github.com/Akshidhan/results-summary-component-main)
-- Live Site URL: (https://akshidhan.github.io/results-summary-component-main/)
+- Solution URL: [Solution URL](https://github.com/Akshidhan/results-summary-component-main)
+- Live Site URL: [Live site URL](https://akshidhan.github.io/results-summary-component-main/)
 
 ## My process
 
