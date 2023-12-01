@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Akshidhan/results-summary-component-main)
+- Live Site URL: (https://akshidhan.github.io/results-summary-component-main/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-I properly learnt how to use flexbox to layout the components in a website. Also got to know that you can individually control the border radius of each corners.
+I properly learned how to use Flexbox to layout the components in a website. I also got to know that you can individually control the border radius of each corner.
 
 ```css
 .flexbox{
@@ -63,7 +63,7 @@ I properly learnt how to use flexbox to layout the components in a website. Also
 
 ### Continued development
 
-Can use Javascript to dynamically change the value that are found in the design
+Can use Javascript to dynamically change the values that are found in the design
 
 ### Useful resources
 
